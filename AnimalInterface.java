@@ -1,25 +1,31 @@
 public class AnimalInterface {
     public static void main(String[] args) {
-        Fish f1 = new Fish("Mimi");
+    	
+    	//fishOne
+        Fish f1 = new Fish();
         System.out.println();
         System.out.println("Fish");
+        f1.setName("Mimi");
         System.out.println("This fish's name is " + f1.getName());
         f1.eat();
         f1.walk();
-
-        Fish f2 = new Fish("Momo");
+        
+        //fishTwo
+        Fish f2 = new Fish();
+        f2.setName("Momo");
         System.out.println("This fish's name is " + f2.getName());
         
+        //cat
         System.out.println();
         System.out.println("Cat");
         Cat c1 = new Cat("Fluffy");
         System.out.println("This cat's name is " + c1.getName());
         c1.walk();
         c1.eat();
-
         Cat c2 = new Cat("Moose");
         System.out.println("This cat's name is " + c2.getName());
         
+        //spider 
         System.out.println();
         System.out.println("Spider");
         Spider s = new Spider();
@@ -27,8 +33,6 @@ public class AnimalInterface {
         s.walk();
     }
 }
-
-
 // --------------------------------------------animal----------------------------------------------------------
 abstract class Animal {
     protected int legs;
@@ -54,9 +58,8 @@ interface Pet {
 class Fish extends Animal implements Pet {
     private String name;
 
-    public Fish(String name) {
+    public Fish() {
         super(0);
-        this.name = name;
     }
 
     public String getName() {
