@@ -19,7 +19,7 @@ public class MethodOverloading {
 
 }
 class Shape {
-	int area;
+	double area;
 	public void area(int length,int breadth) {
 		area = length*breadth;
 		System.out.println("Area of Rectangle with length "+length+" and breadth "+breadth +" is : "+area);

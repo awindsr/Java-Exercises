@@ -1,6 +1,6 @@
 public class CollegeInterface {
     public static void main(String[] args) {
-        Student s1 = new Student("Awin", "CSE", "SJCET");
+        Student s1 = new Student("Awin", "CSE", "SJECT");
         System.out.println("Details: " + s1.getStudentName() + " - " + s1.getCollegeName() + " - " + s1.getDepartmentName());
     }
 }
