@@ -35,7 +35,7 @@ class Number extends Thread {
     Random rand = new Random();
 
     public void run() {
-        for (int i = 1; i<=0; i++) {
+        for (int i = 0; i<=10; i++) {
             int randInt = rand.nextInt(100);
             System.out.println("Random integer generated is: " + randInt);
 
@@ -56,7 +56,7 @@ class Number extends Thread {
     }
 }
 
-public class SyncDemoTwo {
+public class SyncDemo {
     public static void main(String[] args) {
         Number n = new Number();
         n.start();
