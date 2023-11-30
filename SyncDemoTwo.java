@@ -56,7 +56,7 @@ class Number extends Thread {
     }
 }
 
-public class SyncDemo {
+public class SyncDemoTwo {
     public static void main(String[] args) {
         Number n = new Number();
         n.start();
