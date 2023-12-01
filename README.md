@@ -8,8 +8,6 @@ Welcome to the Java Learning Exercises Repository! 🚀 This repository is a com
 2. [Getting Started](#getting-started)
 3. [Exercise Categories](#exercise-categories)
 4. [How to Contribute](#how-to-contribute)
-5. [Acknowledgements](#acknowledgements)
-6. [License](#license)
 
 ## Introduction
 
@@ -30,40 +28,36 @@ Choose an exercise, open the corresponding folder, and start coding!
 
 ## Exercise Categories
 
-### 1. Basics
+### 1. [Basics Exercises](Basics)
 - Hello World
 - Variables and Data Types
 - Control Flow (if statements, loops)
 - Functions and Methods
 
-### 2. Object-Oriented Programming (OOP)
+### 2. [OOP Exercises](Object-Oriented%20Programming%20(OOP))
 - Classes and Objects
 - Inheritance
 - Polymorphism
 - Encapsulation
 
-### 3. Data Structures
+### 3. [Data Structures Exercises](Data%20Structures)
 - Arrays
 - Lists
 - Maps
 - Sets
 
-### 4. Exception Handling
+### 4. [Exception Handling Exercises](Exception%20Handling)
 - Try-Catch blocks
 - Custom Exceptions
 
-### 5. File Handling
+### 5. [File Handling Exercises](File%20Handling)
 - Reading from and Writing to Files
 - Working with Streams
 
-### 6. Multithreading
+### 6. [Multithreading Exercises](Multithreading)
 - Creating Threads
 - Synchronization
 - Thread Pools
-
-### 7. Java APIs
-- Java Collections Framework
-- JavaFX (if applicable)
 
 ## How to Contribute
 
@@ -75,13 +69,6 @@ If you'd like to contribute to this repository:
 4. Push to your branch: `git push origin feature-name`.
 5. Open a pull request.
 
-## Acknowledgements
-
-We would like to express our gratitude to the Java community, educational institutions, and contributors for their valuable insights and feedback.
-
-## License
-
-This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 Happy coding! 🎉
 
