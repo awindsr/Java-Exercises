@@ -59,6 +59,8 @@ Choose an exercise, open the corresponding folder, and start coding!
 - Synchronization
 - Thread Pools
 
+### 6. [Event Handling Exercises](Event Handling)
+
 ## How to Contribute
 
 If you'd like to contribute to this repository:
