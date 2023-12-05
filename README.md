@@ -29,36 +29,11 @@ Choose an exercise, open the corresponding folder, and start coding!
 ## Exercise Categories
 
 ### 1. [Basics Exercises](Basics)
-- Hello World
-- Variables and Data Types
-- Control Flow (if statements, loops)
-- Functions and Methods
-
 ### 2. [OOP Exercises](Object-Oriented%20Programming%20(OOP))
-- Classes and Objects
-- Inheritance
-- Polymorphism
-- Encapsulation
-
 ### 3. [Data Structures Exercises](Data%20Structures)
-- Arrays
-- Lists
-- Maps
-- Sets
-
 ### 4. [Exception Handling Exercises](Exception%20Handling)
-- Try-Catch blocks
-- Custom Exceptions
-
 ### 5. [File Handling Exercises](File%20Handling)
-- Reading from and Writing to Files
-- Working with Streams
-
 ### 6. [Multithreading Exercises](Multithreading)
-- Creating Threads
-- Synchronization
-- Thread Pools
-
 ### 6. [Event Handling Exercises](Event Handling)
 
 ## How to Contribute
