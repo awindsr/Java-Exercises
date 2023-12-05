@@ -35,7 +35,7 @@ Choose an exercise, open the corresponding folder, and start coding!
 ### 5. [Exception Handling Exercises](Exception%20Handling)
 ### 6. [File Handling Exercises](File%20Handling)
 ### 7. [Multithreading Exercises](Multithreading)
-### 8. [Event Handling Exercises](Event Handling)
+### 8. [Event Handling Exercises](Event%20Handling)
 
 ## How to Contribute
 
