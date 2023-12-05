@@ -28,13 +28,14 @@ Choose an exercise, open the corresponding folder, and start coding!
 
 ## Exercise Categories
 
-### 1. [Basics Exercises](Basics)
-### 2. [OOP Exercises](Object-Oriented%20Programming%20(OOP))
-### 3. [Data Structures Exercises](Data%20Structures)
-### 4. [Exception Handling Exercises](Exception%20Handling)
-### 5. [File Handling Exercises](File%20Handling)
-### 6. [Multithreading Exercises](Multithreading)
-### 6. [Event Handling Exercises](Event Handling)
+### 1. [Algorithms](Algorithms)
+### 2. [Basics Exercises](Basics)
+### 3. [OOP Exercises](Object-Oriented%20Programming%20(OOP))
+### 4. [Data Structures Exercises](Data%20Structures)
+### 5. [Exception Handling Exercises](Exception%20Handling)
+### 6. [File Handling Exercises](File%20Handling)
+### 7. [Multithreading Exercises](Multithreading)
+### 8. [Event Handling Exercises](Event Handling)
 
 ## How to Contribute
 
