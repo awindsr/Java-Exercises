@@ -1,68 +1,69 @@
-import java.util.LinkedList;
+package Algorithms;
+
 import java.util.Scanner;
 
-public class DoublyLinkedListMenuDriven {
+public class QuickSort {
 
-    public static void main(String[] args) {
-        LinkedList<Integer> dll = new LinkedList<>();
+	public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int choice;
-        do {
-            System.out.println("\nMenu:");
-            System.out.println("1. Append (Insert at End)");
-            System.out.println("2. Insert at Front");
-            System.out.println("3. Insert at Position");
-            System.out.println("4. Delete");
-            System.out.println("5. Display");
-            System.out.println("6. Exit");
+        System.out.print("Enter the size of the list: ");
+        int size = scanner.nextInt();
 
-            System.out.print("Enter your choice: ");
-            choice = scanner.nextInt();
+        String[] names = new String[size];
 
-            switch (choice) {
-                case 1:
-                    System.out.print("Enter the element to append: ");
-                    int appendElement = scanner.nextInt();
-                    dll.addLast(appendElement);
-                    break;
-                case 2:
-                    System.out.print("Enter the element to insert at the front: ");
-                    int frontElement = scanner.nextInt();
-                    dll.addFirst(frontElement);
-                    break;
-                case 3:
-                    System.out.print("Enter the element to insert: ");
-                    int insertElement = scanner.nextInt();
-                    System.out.print("Enter the position to insert at: ");
-                    int insertPosition = scanner.nextInt();
-                    if (insertPosition >= 0 && insertPosition <= dll.size()) {
-                        dll.add(insertPosition, insertElement);
-                    } else {
-                        System.out.println("Invalid position. Element not inserted.");
-                    }
-                    break;
-                case 4:
-                    System.out.print("Enter the element to delete: ");
-                    int deleteElement = scanner.nextInt();
-                    if (dll.remove(Integer.valueOf(deleteElement))) {
-                        System.out.println("Element " + deleteElement + " deleted.");
-                    } else {
-                        System.out.println("Element " + deleteElement + " not found. Deletion failed.");
-                    }
-                    break;
-                case 5:
-                    System.out.println("Doubly linked list contents:");
-                    System.out.println(dll);
-                    break;
-                case 6:
-                    System.out.println("Exiting the program.");
-                    break;
-                default:
-                    System.out.println("Invalid choice. Please enter a valid option.");
-                    break;
+        System.out.println("Enter " + size + " names:");
+        for (int i = 0; i < size; i++) {
+            names[i] = scanner.next();
+        }
+
+        System.out.println("Original list:");
+        printArray(names);
+
+        quickSort(names, 0, names.length - 1);
+
+        System.out.println("\nSorted list of names in ascending order:");
+        printArray(names);
+
+        scanner.close();
+    }
+
+
+    public static void quickSort(String[] arr, int low, int high) {
+        if (low < high) {
+
+            int pivotIndex = partition(arr, low, high);
+
+
+            quickSort(arr, low, pivotIndex - 1);
+            quickSort(arr, pivotIndex + 1, high);
+        }
+    }
+    public static int partition(String[] arr, int low, int high) {
+
+        String pivot = arr[high];
+
+        int i = low - 1;
+
+        for (int j = low; j < high; j++) {
+            if (arr[j].compareTo(pivot) <= 0) {
+                i++;
+                String temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
             }
+        }
 
-        } while (choice != 6);
+        String temp = arr[i + 1];
+        arr[i + 1] = arr[high];
+        arr[high] = temp;
+
+        return i + 1;
+    }
+    public static void printArray(String[] arr) {
+        for (String s : arr) {
+            System.out.print(s + " ");
+        }
+        System.out.println();
     }
 }
