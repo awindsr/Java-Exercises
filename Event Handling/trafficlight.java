@@ -75,15 +75,15 @@ class TrafficLightPanel extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        int postWidth = 30;
+        int postWidth = 40;
         int postHeight = getHeight();
         int postX = getWidth() / 2 - postWidth / 2;
 
-        // Draw the post
+  
         g.setColor(Color.DARK_GRAY);
         g.fillRect(postX, 0, postWidth, postHeight);
 
-        // Draw the box around the lights
+  
         int boxWidth = 80;
         int boxHeight = 220;
         int boxX = postX - boxWidth / 2;
@@ -95,8 +95,7 @@ class TrafficLightPanel extends JPanel {
         int diameter = 60;
         int x = postX - diameter / 2;
         int y = boxY + 10;
-
-        // Draw the lights
+        
         g.setColor(color1);
         g.fillOval(x, y, diameter, diameter);
 
