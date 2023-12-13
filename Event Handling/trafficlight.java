@@ -81,7 +81,7 @@ class TrafficLightPanel extends JPanel {
 
   
         g.setColor(Color.DARK_GRAY);
-        g.fillRect(postX, 0, postWidth, postHeight);
+        g.fillRect(postX-12, 0, postWidth - 20, postHeight);
 
   
         int boxWidth = 80;
